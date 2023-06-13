@@ -41,9 +41,11 @@ class MainActivity : ComponentActivity() {
                         message = stringResource(id = R.string.task_manager_message)
                     )*/
 
-                   // Quadrant()
+                    // Quadrant()
 
-                    VisitCard()
+                    // VisitCard()
+
+                    //  DiceRollerApp()
                 }
             }
         }
