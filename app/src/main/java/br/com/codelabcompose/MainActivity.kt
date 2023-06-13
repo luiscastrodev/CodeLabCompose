@@ -45,7 +45,9 @@ class MainActivity : ComponentActivity() {
 
                     // VisitCard()
 
-                    //  DiceRollerApp()
+                    // DiceRollerApp()
+
+                    TipTimeScreen()
                 }
             }
         }
