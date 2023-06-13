@@ -24,7 +24,6 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-
                     /*
                     BirthdayGreetingWithImage(
                         message = stringResource(id = R.string.jetpackcompose),
@@ -37,10 +36,11 @@ class MainActivity : ComponentActivity() {
                         stringResource(R.string.in_this_tutorial)
                     ) */
 
-                    TaskManager(
+                    /*TaskManager(
                         title = stringResource(id = R.string.task_manager_title),
                         message = stringResource(id = R.string.task_manager_message)
-                    )
+                    )*/
+                    Quadrant()
                 }
             }
         }
