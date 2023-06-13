@@ -24,19 +24,20 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
+
+                    /*
                     BirthdayGreetingWithImage(
-                        stringResource(R.string.jetpackcompose), stringResource(R.string.from_android)
+                        message = stringResource(id = R.string.jetpackcompose),
+                      from =stringResource(id = R.string.from_android)
                     )
+                    */
+                    /*JetPackComposeTutorial(
+                        stringResource(R.string.jetpack_compose_tutorial),
+                        stringResource(R.string.jetpack_compose_is),
+                        stringResource(R.string.in_this_tutorial)
+                    ) */
                 }
             }
         }
-    }
-
-    @Preview(showBackground = true)
-    @Composable
-    fun BirthdayCardPreview() {
-        BirthdayGreetingWithImage(
-            stringResource(R.string.jetpackcompose), stringResource(R.string.from_android)
-        )
     }
 }
