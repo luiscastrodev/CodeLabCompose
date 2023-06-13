@@ -40,7 +40,10 @@ class MainActivity : ComponentActivity() {
                         title = stringResource(id = R.string.task_manager_title),
                         message = stringResource(id = R.string.task_manager_message)
                     )*/
-                    Quadrant()
+
+                   // Quadrant()
+
+                    VisitCard()
                 }
             }
         }
