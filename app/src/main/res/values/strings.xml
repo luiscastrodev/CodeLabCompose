@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">CodeLabCompose</string>
+    <string name="jetpackcompose">JetPackCompose</string>
+    <string name="from_android">- from Android</string>
 </resources>
