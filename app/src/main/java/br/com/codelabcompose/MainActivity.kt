@@ -36,6 +36,11 @@ class MainActivity : ComponentActivity() {
                         stringResource(R.string.jetpack_compose_is),
                         stringResource(R.string.in_this_tutorial)
                     ) */
+
+                    TaskManager(
+                        title = stringResource(id = R.string.task_manager_title),
+                        message = stringResource(id = R.string.task_manager_message)
+                    )
                 }
             }
         }
