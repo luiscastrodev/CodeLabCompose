@@ -9,6 +9,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.material3.Card
+import androidx.compose.material3.CardColors
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
@@ -28,11 +29,11 @@ fun AffirmationCard(
     affirmation: Affirmation,
     modifier: Modifier = Modifier
 ) {
-
-
     Card(
-        modifier = modifier.padding(8.dp).background(Color.White),
-        elevation = CardDefaults.cardElevation(4.dp)
+        modifier = modifier
+            .padding(8.dp),
+        elevation = CardDefaults.cardElevation(4.dp),
+        colors = CardDefaults.cardColors(Color.White)
     ) {
 
         Column() {
@@ -49,7 +50,7 @@ fun AffirmationCard(
             Text(
                 text = stringResource(id = affirmation.stringResourceId),
                 modifier = Modifier.padding(16.dp),
-                style = MaterialTheme.typography.headlineSmall
+                style = MaterialTheme.typography.titleLarge
             )
         }
     }
@@ -60,10 +61,10 @@ fun AffirmationList(
     affirmationList: List<Affirmation>,
     modifier: Modifier = Modifier
 ) {
-    LazyColumn {
+    LazyColumn(modifier.background(Color.White)) {
 
         itemsIndexed(affirmationList) { index, item ->
-            AffirmationCard(affirmation = item)
+            AffirmationCard(affirmation = item, modifier)
         }
     }
 }
