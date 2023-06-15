@@ -13,7 +13,9 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.sp
+import br.com.codelabcompose.data.Datasource
 import br.com.codelabcompose.ui.theme.CodeLabComposeTheme
+import javax.sql.DataSource
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -41,13 +43,15 @@ class MainActivity : ComponentActivity() {
                         message = stringResource(id = R.string.task_manager_message)
                     )*/
 
-                     //Quadrant()
+                    //Quadrant()
 
-                     // VisitCard()
+                    // VisitCard()
 
-                     // DiceRollerApp()
+                    // DiceRollerApp()
 
-                   // TipTimeScreen()
+                    // TipTimeScreen()
+
+                    AffirmationList(affirmationList = Datasource().loadAffirmations())
 
                 }
             }
