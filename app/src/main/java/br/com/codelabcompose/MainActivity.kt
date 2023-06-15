@@ -47,7 +47,7 @@ class MainActivity : ComponentActivity() {
 
                      // DiceRollerApp()
 
-                    TipTimeScreen()
+                   // TipTimeScreen()
 
                 }
             }

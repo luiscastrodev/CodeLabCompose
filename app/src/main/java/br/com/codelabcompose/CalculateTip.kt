@@ -2,6 +2,7 @@ package br.com.codelabcompose
 
 import android.icu.text.NumberFormat
 import androidx.annotation.StringRes
+import androidx.annotation.VisibleForTesting
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -148,7 +149,8 @@ fun RoundTheTipRow(
     }
 }
 
-private fun calculateTip(
+@VisibleForTesting
+internal fun calculateTip(
     amount: Double,
     tipPercent: Double = 15.0,
     roundUp: Boolean = false
@@ -158,5 +160,5 @@ private fun calculateTip(
     if (roundUp)
         tip = kotlin.math.ceil(tip)
 
-    return NumberFormat.getCurrencyInstance().format(tip)
+    return tip.toString()//NumberFormat.getCurrencyInstance().format(tip)
 }
