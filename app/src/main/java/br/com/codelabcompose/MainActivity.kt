@@ -51,8 +51,9 @@ class MainActivity : ComponentActivity() {
 
                     // TipTimeScreen()
 
-                    AffirmationList(affirmationList = Datasource().loadAffirmations())
+                    // AffirmationList(affirmationList = Datasource().loadAffirmations())
 
+                   GameScreen()
                 }
             }
         }
