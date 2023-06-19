@@ -22,5 +22,7 @@
 
 ![Image description](https://github.com/luiscastrodev/CodeLabCompose/blob/main/affirmations.png)
 
+![Image description](https://github.com/luiscastrodev/CodeLabCompose/blob/main/GameScreen.png)
+
 
 
