@@ -20,4 +20,9 @@
 
 ![Image description](https://github.com/luiscastrodev/CodeLabCompose/blob/main/roundUp.png)
 
+![Image description](https://github.com/luiscastrodev/CodeLabCompose/blob/main/affirmations.png)
+
+![Image description](https://github.com/luiscastrodev/CodeLabCompose/blob/main/GameScreen.png)
+
+
 
